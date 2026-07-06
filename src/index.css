@@ -38,6 +38,7 @@ body {
   color: var(--text-primary);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  padding: 0;
 }
 
 /* Typography Utilities */
