@@ -239,10 +239,10 @@
   .product-details-view { padding-bottom: 60px; }
 }
 @media (max-width: 480px) {
-  .pd-nav { top: 80px; left: 16px; }
+  .pd-nav { top: 80px; left: 20px; }
   .btn-back { font-size: 0.9rem; padding: 8px 14px; }
   .pd-image-wrap { padding: 25px; }
-  .pd-image-wrap::before { top: -10px; left: -10px; }
+  .pd-image-wrap::before { top: -10px; left: -10px; width: calc(100% + 20px); height: calc(100% + 20px); }
   .pd-title { font-size: 2rem; }
   .pd-price { font-size: 1.8rem; margin-bottom: 25px; }
   .pd-badge { font-size: 0.9rem; }

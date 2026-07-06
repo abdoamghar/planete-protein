@@ -416,7 +416,7 @@
   .editorial-product, .editorial-product:nth-child(even) { gap: 25px; }
   .editorial-grid { gap: 35px; }
   .ed-image-wrap { padding: 25px; }
-  .ed-image-wrap::before { top: -10px; left: -10px; }
+  .ed-image-wrap::before { top: -10px; left: -10px; width: calc(100% + 20px); height: calc(100% + 20px); }
   .editorial-product:hover .ed-image-wrap::before { top: 5px; left: 5px; }
   .ed-image { height: 200px; }
   .ed-number { font-size: 7rem; top: -30px; left: -10px; }
@@ -425,7 +425,7 @@
   .ed-desc { font-size: 0.95rem; margin-bottom: 20px; }
   .ed-price { font-size: 2rem; margin-bottom: 20px; }
   .showcase-section { padding: 35px 0; }
-  .cart-drawer { padding: 20px 16px; max-width: 100%; }
+  .cart-drawer { padding: 20px; max-width: 100%; }
   .cart-header { margin-bottom: 20px; padding-bottom: 15px; }
   .cart-header h2 { font-size: 1.5rem; }
   .cart-item { flex-direction: column; gap: 10px; padding: 12px; }
