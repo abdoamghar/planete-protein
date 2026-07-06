@@ -150,26 +150,25 @@ function App() {
         </>
       )}
 
-      <footer style={{ borderTop: '4px solid var(--text-primary)', padding: '60px 0' }}>
-        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '30px' }}>
-          <div>
-            <h3 className="font-display text-outline-volt" style={{ fontSize: '3rem' }}>PLANÈTE PROTÉIN.</h3>
-            <p style={{ color: 'var(--text-muted)', marginTop: '10px', maxWidth: '350px' }}>
+      <footer className="site-footer">
+        <div className="container footer-container">
+          <div className="footer-info">
+            <h3 className="font-display text-outline-volt">PLANÈTE PROTÉIN.</h3>
+            <p className="footer-address">
               Rue 13 N°439, 28830 Mohammedia, Maroc
             </p>
           </div>
-          <div style={{ maxWidth: '100%' }}>
+          <div className="footer-map">
             <iframe
               src="https://maps.google.com/maps?q=Rue+13+439+28830+Mohammedia+Maroc&output=embed"
               width="300"
               height="200"
-              style={{ border: '2px solid var(--volt)', borderRadius: '4px', maxWidth: '100%' }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Store Location"
             />
           </div>
-          <p style={{ color: 'var(--text-muted)' }}>&copy; {new Date().getFullYear()} NO COMPROMISES.</p>
+          <p className="footer-copy">&copy; {new Date().getFullYear()} NO COMPROMISES.</p>
         </div>
       </footer>
 
