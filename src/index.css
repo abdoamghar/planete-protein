@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700;900&family=Inter:wght@400;600;900&display=swap');
+
+:root {
+  /* Midnight Charcoal & Neon Volt */
+  --bg-midnight: #0a0a0c;
+  --bg-surface: #121215;
+  --bg-surface-light: #1c1c20;
+  
+  --volt: #DFFF00; /* Neon Volt Green/Yellow */
+  --volt-hover: #cbe600;
+  
+  --text-primary: #FFFFFF;
+  --text-muted: #888892;
+  
+  /* Typography - Brutalist */
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Shadows & Borders */
+  --border-volt: 2px solid var(--volt);
+  --shadow-volt: 10px 10px 0px 0px var(--volt);
+  --shadow-intense: 0 30px 60px rgba(0,0,0,0.8);
+  
+  /* Transitions */
+  --transition-snap: 0.1s ease-out;
+  --transition-smooth: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-midnight);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Utilities */
+.text-volt {
+  color: var(--volt);
+}
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-primary);
+}
+.text-outline-volt {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--volt);
+}
+.font-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+/* Brutalist Buttons */
+.btn-brutal {
+  font-family: var(--font-display);
+  background-color: var(--volt);
+  color: var(--bg-midnight);
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all var(--transition-snap);
+  box-shadow: 4px 4px 0px 0px #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-brutal:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #FFFFFF;
+  background-color: var(--volt-hover);
+}
+
+.btn-brutal:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px 0px #FFFFFF;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--volt);
+  border: var(--border-volt);
+  box-shadow: none;
+}
+.btn-outline:hover {
+  background: var(--volt);
+  color: var(--bg-midnight);
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-midnight);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-surface-light);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--volt);
+}
