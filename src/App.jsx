@@ -158,12 +158,12 @@ function App() {
               Rue 13 N°439, 28830 Mohammedia, Maroc
             </p>
           </div>
-          <div>
+          <div style={{ maxWidth: '100%' }}>
             <iframe
               src="https://maps.google.com/maps?q=Rue+13+439+28830+Mohammedia+Maroc&output=embed"
               width="300"
               height="200"
-              style={{ border: '2px solid var(--volt)', borderRadius: '4px' }}
+              style={{ border: '2px solid var(--volt)', borderRadius: '4px', maxWidth: '100%' }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Store Location"
@@ -211,7 +211,7 @@ function App() {
               <span className="text-volt">{cartTotal} MAD</span>
             </div>
             <button className="btn-brutal whatsapp-btn" onClick={checkoutViaWhatsApp}>
-              SECURE SECURE VIA WHATSAPP
+              SECURE VIA WHATSAPP
             </button>
           </div>
         )}

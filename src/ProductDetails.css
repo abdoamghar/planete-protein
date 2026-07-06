@@ -222,8 +222,36 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .pd-container { flex-direction: column; }
-  .pd-image-section { position: relative; top: 0; width: 100%; margin-bottom: 40px; }
+  .pd-container { flex-direction: column; gap: 40px; }
+  .pd-image-section { position: relative; top: 0; width: 100%; margin-bottom: 0; }
   .pd-title { font-size: 3.5rem; }
   .pd-actions { flex-direction: column; }
+}
+@media (max-width: 768px) {
+  .pd-nav { top: 100px; left: 20px; }
+  .pd-image-wrap { padding: 40px; }
+  .pd-title { font-size: 2.8rem; }
+  .pd-price { font-size: 2.5rem; }
+  .pd-desc { font-size: 1rem; margin-bottom: 30px; }
+  .pd-variants { gap: 25px; margin-bottom: 40px; }
+  .pd-gallery { gap: 10px; }
+  .pd-thumbnail { width: 60px; height: 60px; padding: 6px; }
+  .product-details-view { padding-bottom: 60px; }
+}
+@media (max-width: 480px) {
+  .pd-nav { top: 80px; left: 16px; }
+  .btn-back { font-size: 0.9rem; padding: 8px 14px; }
+  .pd-image-wrap { padding: 25px; }
+  .pd-image-wrap::before { top: -10px; left: -10px; }
+  .pd-title { font-size: 2rem; }
+  .pd-price { font-size: 1.8rem; margin-bottom: 25px; }
+  .pd-badge { font-size: 0.9rem; }
+  .pd-desc { font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6; }
+  .pd-variant-group h3 { font-size: 1.2rem; }
+  .pd-option-btn { padding: 10px 16px; font-size: 0.9rem; }
+  .pd-actions { gap: 12px; }
+  .pd-qty-selector button { padding: 8px 14px; font-size: 1.2rem; }
+  .pd-add-btn { font-size: 1.1rem; padding: 14px 20px; }
+  .pd-gallery { gap: 8px; }
+  .pd-thumbnail { width: 50px; height: 50px; padding: 4px; }
 }

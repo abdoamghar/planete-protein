@@ -119,3 +119,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--volt);
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .btn-brutal {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
